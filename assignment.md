@@ -25,6 +25,16 @@ Answer:
 
 ```python
 
+r.hset(
+    'john doe',
+    mapping={
+        "age": 35,
+        "email": "john@gmail.com",
+    },
+)
+
+r.hgetall('john doe')
+
 ```
 
 ### Question 2
@@ -41,6 +51,15 @@ bucket = client.get_bucket("gcp-public-data-landsat")
 Answer:
 
 ```python
+
+blobs = bucket.list_blobs()
+
+print("Blobs in {}:".format(bucket.name))
+for ix, item in enumerate(blobs):
+    print("\t" + item.name)
+    print("\t" + "Size: {} bytes".format(item.size))
+    if ix == 10:
+        break
 
 ```
 
