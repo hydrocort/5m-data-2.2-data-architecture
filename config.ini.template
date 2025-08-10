@@ -1,0 +1,5 @@
+[redis]
+host = your_redis_host
+port = your_redis_port
+username = your_username
+password = your_password

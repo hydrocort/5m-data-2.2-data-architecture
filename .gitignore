@@ -1,6 +1,5 @@
-solutions/
-.DS_Store
-.ipynb_checkpoints/
-output/*.db*
-*.pyc
+.env
+.env.*
+config.ini
 __pycache__/
+*.pyc
